@@ -1,0 +1,229 @@
+/*Font Styles------------------------------------*/
+
+@font-face {
+    font-family: 'aleoregular';
+    src: url('../fonts/Aleo-Regular-webfont.eot');
+    src: url('../fonts/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo-Regular-webfont.woff') format('woff'),
+         url('../fonts/Aleo-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo-Regular-webfont.svg#aleoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'molotregular';
+    src: url('../fonts/Molot-webfont.eot');
+    src: url('../fonts/Molot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Molot-webfont.woff') format('woff'),
+         url('../fonts/Molot-webfont.ttf') format('truetype'),
+         url('../fonts/Molot-webfont.svg#molotregular') format('svg');
+}
+
+@font-face {
+    font-family: 'walkway_blackregular';
+    src: url('../fonts/Walkway_Black-webfont.eot');
+    src: url('../fonts/Walkway_Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Walkway_Black-webfont.woff') format('woff'),
+         url('../fonts/Walkway_Black-webfont.ttf') format('truetype'),
+         url('../fonts/Walkway_Black-webfont.svg#walkway_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*Base styles------------------------------------*/
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  color: darkslategrey;
+  font: 1em 'aleoregular', Arial, sans-serif;
+  background: ghostwhite;
+  
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 0.20;
+  text-shadow: -4px 2px 6px lightgrey;
+}
+
+h1,
+h2 {
+  color: black;
+  font-family: 'molotregular', Arial, sans-serif;
+  text-align:center;
+}
+
+h2 {
+  font-size: 2.2rem;
+  border: 2px black solid;
+  margin: auto;
+  width: 20%;
+  border-radius: 100% 50% 100% 50%;
+  padding: 20px;
+  background: linear-gradient(to top, red 10% , blue 20%, yellow 80%);
+  box-shadow: inset 0px 0px 15px 4px black;
+ 
+}
+
+h3 {
+  text-align:center;
+  font-size: 1.8rem;
+  font-family:  'walkway_blackregular', Arial, sans-serif; 
+}
+
+a:hover {
+  opacity: 0.4;
+}
+
+
+
+/* Formatting------------------------------------*/
+
+.main-header{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align:center;
+  margin: 100px 100px 20px 100px;
+  border-top: 15px solid darkslategrey;
+  border-radius: 100% 50% 100% 50%;
+  background: url('../images/colombian-flag.jpg') no-repeat center;
+  background-size:cover;
+  opacity: 0.8;
+  color: black;
+  box-shadow: inset 0px 0px 70px 60px #000;
+ 
+}
+
+#delight {
+  font-weight:700;
+  font-size: 2.2rem;
+  font-family:  'walkway_blackregular', Arial, sans-serif;
+  text-shadow: -2px 2px 3px lightgrey;
+}
+
+
+.intro-des,
+.intro-des2{
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  font-weight: 300;
+  font-size: 1.9rem;
+  padding-bottom: 55px;
+  font-family: 'walkway_blackregular', Arial, sans-serif;
+  color:white;
+  text-shadow:  0px 1px 0px #999, 
+                0px 2px 0px #888, 
+                0px 3px 0px #777, 
+                0px 4px 0px #666, 
+                0px 5px 0px #555, 
+                0px 6px 0px #444, 
+                0px 7px 0px #333, 
+                0px 8px 7px #001135;
+}
+
+.intro {
+  background: linear-gradient(#f8f8ff, transparent 60%),
+              linear-gradient(0deg, #f8f8ff, transparent 35%),
+    url('../images/bogota-night2.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 450px;
+  margin-bottom: 50px;
+    
+}
+
+.content {
+  width: 61%;
+  margin: auto;
+  padding-bottom: 70px;
+  overflow:auto;
+    
+}
+
+.footer {
+  text-align: center;
+}
+
+
+
+/* Pics -----------------------------------------------*/
+
+#catedral {
+  width: 300px;
+  height: 230px; 
+}
+
+#bogota {
+  width: 450px;
+  height: 300px;
+  float:right;
+  padding-bottom: 15px;  
+}
+
+#monse {
+  width: 300px;
+  padding-top: 10px;
+  float:left;
+  padding-bottom: 45px;
+}
+
+#bog2 {
+  width: 450px;
+  float:right;
+  display: block;
+}
+
+#cart1 {
+  width: 275px;
+  float:left;
+}
+
+#cart2 {
+  width: 470px;
+  height: 290px;
+  float:right;
+  display:block;
+}
+
+#cart3 {
+  width: 275px;
+  padding-top: 15px;
+  float:left;  
+}
+
+#bask {
+  float:right;
+  max-width:50%;
+  padding-top:15px;
+  padding-right: 100px;
+}
+
+/* Float Clearfix --------------------------------- */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+
+
+/* Media -------------------------------------------*/
+
+@media (max-width: 800px) {
+  .body {
+    color: #000;
+  }
+}
+
+
+
+
+
+
